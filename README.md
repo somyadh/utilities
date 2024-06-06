@@ -11,7 +11,7 @@ The image compression tool compresses PNG images to a specified target size whil
 #### Usage
 
 ```
-python image_compression_cli.py input.png output.png --target_size 1.5
+python image-compression.py input.png output.png --target_size 1.0
 ```
 
 ### PDF Splitter CLI
@@ -21,7 +21,7 @@ The PDF splitter tool extracts a range of pages from a PDF file and create a new
 #### Usage
 
 ```
-python pdf_splitter_cli.py input.pdf output.pdf --start_page 1 --end_page 5
+python pdf_splitter.py  --input_file input.pdf  --start_page 1 --end_page 5 --output_file output.pdf
 ```
 
 ## Getting Started
