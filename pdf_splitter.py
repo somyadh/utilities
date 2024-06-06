@@ -16,10 +16,10 @@ def split_pdf(input_file, start_page, end_page, output_file):
 
 def main():
     parser = argparse.ArgumentParser(description='PDF Splitter CLI')
-    parser.add_argument('input_file', help='Path to the input PDF file')
-    parser.add_argument('start_page', type=int, help='Start page number')
-    parser.add_argument('end_page', type=int, help='End page number')
-    parser.add_argument('output_file', help='Path to the output PDF file')
+    parser.add_argument('--input_file', help='Path to the input PDF file')
+    parser.add_argument('--start_page', type=int, help='Start page number')
+    parser.add_argument('--end_page', type=int, help='End page number')
+    parser.add_argument('--output_file', help='Path to the output PDF file')
     args = parser.parse_args()
 
     split_pdf(args.input_file, args.start_page, args.end_page, args.output_file)
