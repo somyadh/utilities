@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Image Compression - Preview</title>
+</head>
+
+<body>
+    <h1>Image Compression - Preview</h1>
+    <img src="{{ url_for('static', filename=compressed_image) }}" alt="Compressed Image">
+    <p>Compressed Image Size: {{ compressed_size|round(2) }} MB</p>
+    <a href="{{ url_for('download', filename=optimized_filename) }}" download>Download Compressed Image</a>
+    <br>
+    <a href="{{ url_for('image_compress') }}">Back to Upload</a>
+</body>
+
+</html>

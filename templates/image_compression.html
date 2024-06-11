@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Image Compression</title>
+</head>
+
+<body>
+    <h1>Image Compression</h1>
+    <form action="/image/compress" method="post" enctype="multipart/form-data">
+        <input type="file" name="image" accept="image/*" required>
+        <br>
+        <label for="target_size">Target Size (MB):</label>
+        <input type="number" name="target_size" id="target_size" step="0.1" value="1.0" required>
+        <br>
+        <input type="submit" value="Compress Image">
+    </form>
+</body>
+
+</html>
